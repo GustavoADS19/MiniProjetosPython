@@ -1,0 +1,17 @@
+matriz = []
+soma = []
+print("Preencha a matriz com valores inteiros")
+for i in range(5):
+    linhas = []
+    matriz.append(linhas)
+    for j in range(5):
+        linha = int(input(f"Preencha o campo [{i},{j}]: "))
+        linhas.append(linha)
+        
+cont = 0
+for i in range(5):
+    print(matriz[cont])
+    cont = cont + 1
+
+
+soma.append(matriz[][])
