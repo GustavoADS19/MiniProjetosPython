@@ -1,0 +1,12 @@
+tamanho = int(input("Entre com o número de linhas do seu triângulo de Pascal: "))
+linhas = [1]
+y = [0]
+
+for x in range(max(tamanho,0)):
+    print(linhas)
+    linhas=[l+r for l,r in zip(linhas+y, y+linhas)]
+    tamanho>=1
+
+sair = 0
+while (sair != 1):
+    sair = int(input("Digite 1 para sair: "))
