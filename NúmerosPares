@@ -1,0 +1,22 @@
+numeros = []
+numerosPares = []
+numerosImpares = []
+
+print("Entre com 30 números inteiros: ")
+
+for i in range (1, 31):
+    item = (int(input("Entre com um número inteiro: ")))
+    numeros.append(item)
+    if (item%2 == 0):
+        numerosPares.append(item)
+    else:
+        numerosImpares.append(item)
+
+
+print("Lista completa: ", numeros)
+print("Lista de vetores de posições pares: ", numerosPares)
+print("Lista de vetores de posições impares: ", numerosImpares)
+
+sair = 0
+while (sair != 1):
+    sair = int(input("Digite 1 para sair: "))
