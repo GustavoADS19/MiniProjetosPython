@@ -1,0 +1,22 @@
+print("Digite dois valores para descobrir quais números primos estão entre eles")
+
+num = int(input("Digite o primeiro número: "))
+numFim = int(input("Digite o segundo número: "))
+primos = []
+
+for x in range(num,numFim):
+    contador = 0
+
+    for y in range (num,x+1):
+        if x%y == 0:
+            contador += 1
+            
+    if ((contador <= 2) and (contador != 1)):
+        primos.append(x)
+        
+print(primos)
+
+sair = 0
+
+while (sair != 1):
+    sair = int(input("Digite 1 para sair: "))
